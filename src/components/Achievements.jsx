@@ -5,17 +5,17 @@ const achievementsData = [
   {
     title: "ServiceNow CSA",
     description: "Certified System Administrator",
-    certificate: "/certificates/csa.png",
+    certificate: `${import.meta.env.BASE_URL}certificates/csa.png`,
   },
   {
     title: "ServiceNow CAD",
     description: "Certified Application Developer",
-    certificate: "/certificates/cad.png",
+    certificate: `${import.meta.env.BASE_URL}certificates/cad.png`,
   },
   {
     title: "SmartBridge Internship",
     description: "ShopSmart project completion",
-    certificate: "/certificates/SmartBridge.png",
+    certificate: `${import.meta.env.BASE_URL}certificates/SmartBridge.png`,
   },
 ];
 

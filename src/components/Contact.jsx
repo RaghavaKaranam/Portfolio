@@ -20,7 +20,12 @@ const Contact = () => {
                 raghavakaranam35@gmail.com
               </a>
             </li>
-            <li>📞 Phone: +91 9494707850</li>
+
+            <li>
+              📞 Phone:
+              <a href="tel:+919494707850"> +91 9494707850</a>
+            </li>
+
             <li>
               💻 GitHub:
               <a
@@ -28,9 +33,10 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://github.com/RaghavaKaranam
+                github.com/RaghavaKaranam
               </a>
             </li>
+
             <li>
               🔗 LinkedIn:
               <a
@@ -38,25 +44,39 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://www.linkedin.com/in/raghava-karanam-a58562328/
+                linkedin.com/in/raghava-karanam
               </a>
             </li>
           </ul>
 
+          {/* Resume link (Drive – open in new tab) */}
           <a
-            href="https://drive.google.com/file/d/15K7xuL_pUvXCTLASLM76H8n0hd5NTZ6y/view?usp=drive_link"
-            download
+            href="https://drive.google.com/file/d/15K7xuL_pUvXCTLASLM76H8n0hd5NTZ6y/view"
+            target="_blank"
+            rel="noopener noreferrer"
             className="resume-btn"
           >
-            <p> show Resume</p>
+            View Resume
           </a>
         </div>
 
-        {/* Right side: Contact form */}
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" rows="5" required />
+        {/* Right side: Contact form (Formspree) */}
+        <form
+          className="contact-form"
+          action="https://formspree.io/f/xdagrapr" // 🔁 replace with YOUR form ID
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+
+          <input type="email" name="email" placeholder="Your Email" required />
+
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          />
+
           <button type="submit">Send Message</button>
         </form>
       </div>
