@@ -1,0 +1,71 @@
+.achievements {
+  min-height: 100vh;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #38bdf8;
+  margin-bottom: 40px;
+}
+
+.achievements-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.achievement-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px;
+  transition:
+    transform 0.3s ease,
+    border 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+.achievement-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.issuer {
+  display: block;
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.achievement-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cbd5f5;
+  margin-bottom: 20px;
+}
+
+.certificate-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.certificate-btn:hover {
+  background: #0ea5e9;
+}
